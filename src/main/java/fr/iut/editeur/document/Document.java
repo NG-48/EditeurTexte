@@ -1,5 +1,7 @@
 package fr.iut.editeur.document;
 
+
+
 public class Document {
 
     private String texte;
@@ -32,7 +34,12 @@ public class Document {
       }
 
     public void majuscules(int debut,int fin){
-      String maj = texte.substring(debut,fin+1).toUpperCase;
+      String maj = texte.substring(debut,fin+1);
+      maj = maj.toUpperCase();
       remplacer(debut,fin,maj);
+    }
+
+    public void clear(){
+        texte = "faut pas tout supprimer stp";
     }
 }
