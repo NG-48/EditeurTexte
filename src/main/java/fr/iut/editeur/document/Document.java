@@ -40,6 +40,6 @@ public class Document {
     }
 
     public void clear(){
-        texte = "faut pas tout supprimer stp";
+        texte = "";
     }
 }
