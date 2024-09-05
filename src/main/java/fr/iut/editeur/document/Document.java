@@ -42,4 +42,10 @@ public class Document {
     public void clear(){
         texte = "";
     }
+
+    public void ajouter(int debut,String ajout){
+        String partieGauche = texte.substring(0, debut);
+        String partieDroite = texte.substring(debut + 1);
+        texte = partieGauche + ajout + partieDroite;
+    }
 }

@@ -22,6 +22,7 @@ public class CommandeFactory {
             case "remplacer" : return new CommandeRemplacer(document,parameters);
             case "effacer" : return new CommandeEffacer(document,parameters);
             case "clear" : return new CommandeClear(document,parameters);
+            case "inserer" : return new CommandeInserer(document,parameters);
             default: return null;
         }
     }
