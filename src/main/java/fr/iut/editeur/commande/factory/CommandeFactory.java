@@ -16,6 +16,13 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+    /*
+     * methode qui avec la ligne de commande entré creer la bonne fonctionalité
+     * @param name , commmande saisit par l'utilisateur
+     * @param document , document sur lequel on écrit actuellement
+     * @param parameters , tableau contenant les parametres de la commande
+     * @return Une commande qui est le produit de tout les paramètres
+     */
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);

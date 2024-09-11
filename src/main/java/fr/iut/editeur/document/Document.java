@@ -4,6 +4,7 @@ package fr.iut.editeur.document;
 
 public class Document {
 
+    // le texte contenu sur notre page
     private String texte;
 
     public Document() {
@@ -18,6 +19,7 @@ public class Document {
         this.texte = texte;
     }
 
+    // rajoute du texte à la fin du précedent
     public void ajouter(String texte) {
         this.texte += texte;
     }
@@ -26,7 +28,7 @@ public class Document {
     public String toString() {
         return this.texte;
     }
-
+    // remplace le texte compris entre debut et fin par le texte remplacement
     public void remplacer(int debut, int fin, String remplacement) {
      String partieGauche = texte.substring(0, debut);
      String partieDroite = texte.substring(fin + 1);
